@@ -1,8 +1,8 @@
 pragma solidity ^0.8.19;
 import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
-import {IERC721Receiver} from "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol";
+import {ERC721Holder} from "@openzeppelin/contracts/token/ERC721/utils/ERC721Holder.sol";
 
-contract RegisteredAccount is Ownable {
+contract RegisteredAccount is Ownable, ERC721Holder {
 
     receive() external payable {}
     fallback() external payable {}
@@ -18,9 +18,5 @@ contract RegisteredAccount is Ownable {
                 revert(add(result, 32), mload(result))
             }
         }
-    }
-
-    function onERC721Received(address operator, address from, uint256 tokenId, bytes calldata data) external view returns (bytes4) {
-        return this.onERC721Received.selector;
     }
 }

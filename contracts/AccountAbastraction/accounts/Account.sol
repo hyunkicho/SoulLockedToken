@@ -18,7 +18,7 @@ import "@account-abstraction/contracts/samples/callback/TokenCallbackHandler.sol
   *  has execute, eth handling methods
   *  has a single signer that can send requests through the entryPoint.
   */
-contract SimpleAccount is BaseAccount, TokenCallbackHandler, UUPSUpgradeable, Initializable {
+contract Account is BaseAccount, TokenCallbackHandler, UUPSUpgradeable, Initializable {
     using ECDSA for bytes32;
 
     address public owner;
@@ -36,7 +36,6 @@ contract SimpleAccount is BaseAccount, TokenCallbackHandler, UUPSUpgradeable, In
     function entryPoint() public view virtual override returns (IEntryPoint) {
         return _entryPoint;
     }
-
 
     // solhint-disable-next-line no-empty-blocks
     receive() external payable {}
@@ -62,11 +61,11 @@ contract SimpleAccount is BaseAccount, TokenCallbackHandler, UUPSUpgradeable, In
     /**
      * execute a sequence of transactions
      */
-    function executeBatch(address[] calldata dest, bytes[] calldata func) external {
+    function executeBatch(address[] calldata dest, uint256[] calldata value, bytes[] calldata func) external {
         _requireFromEntryPointOrOwner();
         require(dest.length == func.length, "wrong array lengths");
         for (uint256 i = 0; i < dest.length; i++) {
-            _call(dest[i], 0, func[i]);
+            _call(dest[i], value[i], func[i]);
         }
     }
 

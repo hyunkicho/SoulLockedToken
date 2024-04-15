@@ -11,7 +11,7 @@ contract SBT is ERC5192, Ownable {
   }
   function safeMint(address to, uint256 tokenId)
   external
-  onlyOwner
+  // onlyOwner
   {
     _safeMint(to, tokenId);
     if (isLocked) emit Locked(tokenId);

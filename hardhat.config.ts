@@ -6,17 +6,45 @@ import "@nomicfoundation/hardhat-ethers";
 const config: HardhatUserConfig = {
   solidity: {
     compilers: [
-      { version: "0.8.19" },
-      { version: "0.8.12" },
-      { version: "0.8.24" }
-    ],
-    settings: {
-      optimizer: {
-        enabled: true,
-        runs: 1000,
+      { 
+        version: "0.8.19",
+        settings: {
+          optimizer: {
+            enabled: true,
+            runs: 100000 
+          }
+        }
+      },
+      {
+        version: "0.8.12",
+        settings: {
+          optimizer: {
+            enabled: true,
+            runs: 100000 
+          }
+        }
+      },
+      { 
+        version: "0.8.24",
+        settings: {
+          optimizer: {
+            enabled: true,
+            runs: 100000 
+          }
+        }
       }
-    },
-  }
+    ]
+  },
+  defaultNetwork: 'hardhat',
+  networks: {
+    hardhat: {
+      // allowUnlimitedContractSize: true,
+      forking: {
+        enabled: true,
+        url: "https://rpc.ankr.com/eth",
+      },
+    }
+  },
 };
 
 export default config;
