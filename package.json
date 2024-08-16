@@ -2,15 +2,28 @@
   "dependencies": {
     "@account-abstraction/contracts": "^0.6.0",
     "@openzeppelin/contracts": "^4.9.3",
+    "@types/snarkjs": "^0.7.8",
+    "@zk-kit/eddsa-poseidon": "^1.0.2",
+    "circom_tester": "^0.0.20",
+    "circomlib": "^2.0.5",
+    "crypto": "^1.0.1",
+    "elliptic": "^6.5.7",
     "erc5192": "^0.0.1",
-    "openzeppelin-solidity": "^3.4.2"
+    "hardhat": "^2.22.5",
+    "hardhat-gas-reporter": "^1.0.9",
+    "i": "^0.3.7",
+    "jsonwebtoken": "^9.0.2",
+    "npm": "^10.8.2",
+    "openzeppelin-solidity": "^3.4.2",
+    "poseidon-lite": "^0.2.0",
+    "snarkjs": "^0.7.4",
+    "sol2uml": "^1.1.6"
   },
   "devDependencies": {
-    "sol2uml": "^1.1.6",
-    "hardhat-gas-reporter": "^1.0.9",
     "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^22.3.0",
     "hardhat": "^2.17.3",
-    "mocha": "^10.4.0",
-    "hardhat-contract-sizer": "^2.8.0"
+    "mocha": "^10.4.0"
   }
 }
