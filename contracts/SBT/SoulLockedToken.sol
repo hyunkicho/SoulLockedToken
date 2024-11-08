@@ -70,10 +70,10 @@ contract SoulLockedToken is ERC5192, AccessControl, Ownable {
   onlyRole(WEB2AUTH_ROLE)
   validSignature(signature, credId)
   {
-
-    require(!passKeyChecker(signature, messageHash), "SBTGuardWithPasskey : signature is not valid");
+    require(!passKeyChecker(signature, messageHash), "SBTGuardWithPasskey : signature is valid");
     delR1Signer(credId);
     delete passKeyAddress[tokenId][ownerOf(tokenId)];
+    _burn(tokenId);
   }
 
   // Anyone could check verification info here
