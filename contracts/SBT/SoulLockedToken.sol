@@ -28,7 +28,7 @@ contract SoulLockedToken is ERC5192, AccessControl, Ownable {
   mapping(bytes => uint256[2]) private _r1Signers;
   mapping(uint256 => mapping(address => AuthInfo)) public passKeyAddress;
 
-  modifier validSignature(bytes calldata signature, bytes memory credId) {
+  modifier validSignature(bytes calldata signature, bytes calldata credId) {
     require(
         keccak256(abi.decode(signature[7:], (Signature)).credId) == keccak256(abi.encodePacked(credId)),
         "SoulLockedToken: signature and credId do not match"
@@ -61,10 +61,10 @@ contract SoulLockedToken is ERC5192, AccessControl, Ownable {
 
   // only Used by web2auth roller when Auth is not valid anymore
   function burn(
-    uint256 tokenId,
-    bytes memory credId,
     bytes calldata signature,
-    bytes32 messageHash
+    bytes32 messageHash,
+    uint256 tokenId,
+    bytes calldata credId
   )
   external
   onlyRole(WEB2AUTH_ROLE)
@@ -97,7 +97,7 @@ contract SoulLockedToken is ERC5192, AccessControl, Ownable {
     bytes calldata signature,
     bytes32 messageHash,
     uint256 tokenId,
-    bytes memory credId
+    bytes calldata credId
   ) 
   public 
   onlyRole(WEB2AUTH_ROLE) 

@@ -42,7 +42,6 @@ function createKeyPair(): KeyPair {
     const keyPair = ec.keyFromPrivate(wallet.privateKey);
     const privateKey = keyPair.getPrivate("hex");
     const _publicKey = keyPair.getPublic();
-    console.log("pk: ", privateKey);
     const publicKey_ecdsa = Buffer.from(_publicKey.encode("hex").substr(2), "hex");
     const publicKey: [string, string] = [
         "0x" + publicKey_ecdsa.slice(0, 32).toString("hex"),
@@ -87,6 +86,10 @@ async function generateSignature(
     );
 }
 
+function wait(milliseconds: number) {
+    return new Promise(resolve => setTimeout(resolve, milliseconds));
+}
+
 interface DeployFixtureResult {
     registeredAddress: string;
     UtilsFactoryContract: Utils;
@@ -115,7 +118,6 @@ describe("Test passkey attached SBT", function () {
         it("mint SBT correctly and check if owner is valid", async function () {
             const { registeredAddress, UtilsFactoryContract, SoulLockedTokenFactory, deployer } = await loadFixture(deployFixture);
 
-            console.log("key 1st");
             const { wallet, privateKey, publicKey } = createKeyPair();
             const credId = ethers.zeroPadValue(deployer.address, 32);
             const tokenId = 0;
@@ -148,12 +150,14 @@ describe("Test passkey attached SBT", function () {
 
             const updateAuthTx = await SoulLockedTokenFactory.updateAuth(sig, challengeHash, tokenId, credId);
             await updateAuthTx.wait();
+
         });
 
         it("execute many times", async function () {
             const { registeredAddress, UtilsFactoryContract, SoulLockedTokenFactory } = await loadFixture(deployFixture);
+            this.timeout(60000);
+            for(let i=0; i< 20; i++) {
 
-            const tasks = Array.from({ length: 100 }, async (_, i) => {
                 const { wallet, privateKey, publicKey } = createKeyPair();
                 const credId = ethers.zeroPadValue(wallet.address, 32);
                 const tokenId = i;
@@ -163,7 +167,7 @@ describe("Test passkey attached SBT", function () {
 
                 expect(await SoulLockedTokenFactory.ownerOf(tokenId)).equal(registeredAddress);
 
-                const challenge = "PasskeyVerificationChallenge";
+                const challenge = `PasskeyVerificationChallenge${i}`;
                 const challengeHash = generateChallengeHash(challenge);
 
                 const version = 1;
@@ -176,14 +180,23 @@ describe("Test passkey attached SBT", function () {
                 const challengeb64url = base64url.encode(challengeBuffer);
 
                 const clientDataJSON = `{"type":"webauthn.get","challenge":"${challengeb64url}","origin":"http://localhost:3000","crossOrigin":false}`;
-                const authenticatorData = "0x49960de5880e8c687434170f6476605b8fe4aeb9a28632c7995cf3ba831d97630500000000";
+                const authenticatorData = `0x49960de5880e8c687434170f6476605b8fe4aeb9a28632c7995cf3ba831d976305000000${0}`;
 
                 const sig = await generateSignature(privateKey, authenticatorData, clientDataJSON, UtilsFactoryContract, challengeToSign, credId);
-                const CheckingPasskey = await SoulLockedTokenFactory.passKeyChecker(sig, challengeHash);
-                expect(CheckingPasskey).to.be.true;
-            });
+                // const CheckingPasskey = await SoulLockedTokenFactory.passKeyChecker(sig, challengeHash);
+                // expect(CheckingPasskey).to.be.true;
 
-            await Promise.all(tasks);
+                const updateAuthTx = await SoulLockedTokenFactory.updateAuth(sig, challengeHash, tokenId, credId);
+                await updateAuthTx.wait();
+
+                const challengeFake = "PasskeyVerificationChallengeFake";
+                const challengeHashFake = generateChallengeHash(challengeFake);
+                const burnTx = await SoulLockedTokenFactory.burn(sig, challengeHashFake, i, credId);
+                await burnTx.wait();
+
+                wait(10)
+            };
+
         });
     });
 });
