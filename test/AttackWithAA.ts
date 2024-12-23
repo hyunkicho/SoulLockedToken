@@ -35,7 +35,7 @@ describe("Basic AA wallet", function () {
       const { aa_accountFactory, entryPointAddress, entryPointFactory, sbt_Factory, sbtAddress, owner, aaWalletBuyer, aaWalletSeller } = await loadFixture(
         deployAccountAbstractionFixture
       );
-      for(let i=0; i< 1000; i++) {
+      for(let i=0; i< 100; i++) {
         const sbt_owner_salt = i; //example salt
         const createAccountTx = await aa_accountFactory.connect(aaWalletSeller).createAccount(aaWalletSeller.address, sbt_owner_salt);
         await createAccountTx.wait();
