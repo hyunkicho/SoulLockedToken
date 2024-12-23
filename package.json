@@ -2,13 +2,15 @@
   "dependencies": {
     "@account-abstraction/contracts": "^0.6.0",
     "@openzeppelin/contracts": "^4.9.3",
+    "@simplewebauthn/browser": "^11.0.0",
+    "@simplewebauthn/server": "^11.0.0",
     "@types/snarkjs": "^0.7.8",
     "@zk-kit/eddsa-poseidon": "^1.0.2",
     "circom_tester": "^0.0.20",
     "circomlib": "^2.0.5",
     "crypto": "^1.0.1",
-    "elliptic": "^6.5.7",
     "erc5192": "^0.0.1",
+    "fido2-lib": "^3.5.3",
     "hardhat": "^2.22.5",
     "hardhat-gas-reporter": "^1.0.9",
     "i": "^0.3.7",
@@ -22,8 +24,13 @@
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^3.0.0",
     "@types/jsonwebtoken": "^9.0.6",
-    "@types/node": "^22.3.0",
+    "@types/mocha": "^10.0.9",
+    "@types/node": "^22.8.4",
+    "base64url": "^3.0.1",
+    "elliptic": "^6.6.0",
     "hardhat": "^2.17.3",
-    "mocha": "^10.4.0"
+    "mocha": "^10.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
   }
 }

@@ -11,8 +11,8 @@ const config: HardhatUserConfig = {
         settings: {
           optimizer: {
             enabled: true,
-            runs: 100000 
-          }
+            runs: 999999 
+          },
         }
       },
       {
@@ -20,7 +20,7 @@ const config: HardhatUserConfig = {
         settings: {
           optimizer: {
             enabled: true,
-            runs: 100000 
+            runs: 999999 
           }
         }
       },
@@ -29,8 +29,18 @@ const config: HardhatUserConfig = {
         settings: {
           optimizer: {
             enabled: true,
-            runs: 100000 
+            runs: 999999 
           }
+        }
+      },
+      { 
+        version: "0.8.21",
+        settings: {
+          optimizer: {
+            enabled: true,
+            runs: 999999 
+          },
+          viaIR: true
         }
       }
     ]
@@ -39,10 +49,6 @@ const config: HardhatUserConfig = {
   networks: {
     hardhat: {
       // allowUnlimitedContractSize: true,
-      forking: {
-        enabled: true,
-        url: "https://rpc.ankr.com/eth",
-      },
     }
   },
 };
