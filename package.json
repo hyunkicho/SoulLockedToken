@@ -17,6 +17,7 @@
     "jsonwebtoken": "^9.0.2",
     "npm": "^10.8.2",
     "openzeppelin-solidity": "^3.4.2",
+    "p-limit": "^6.2.0",
     "poseidon-lite": "^0.2.0",
     "snarkjs": "^0.7.4",
     "sol2uml": "^1.1.6"
