@@ -6,6 +6,15 @@ import "@nomicfoundation/hardhat-ethers";
 const config: HardhatUserConfig = {
   solidity: {
     compilers: [
+      {
+        version: "0.7.6", // GalxePassport
+        settings: {
+          optimizer: {
+            enabled: true,
+            runs: 999999
+          }
+        }
+      },
       { 
         version: "0.8.19",
         settings: {

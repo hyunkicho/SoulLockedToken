@@ -4,7 +4,7 @@ import {
 } from "@nomicfoundation/hardhat-toolbox/network-helpers";
 import { expect } from "chai";
 import { ethers } from "hardhat";
-import { AccountFactory, EntryPoint, NFT, SBT } from "../typechain-types";
+import {AccountFactory, AccountTradableFactory, EntryPoint, NFT, SBT} from "../typechain-types";
 import { EntryPoint__factory, UserOperationStruct } from "@account-abstraction/contracts";
 import { AddressLike } from "ethers";
 

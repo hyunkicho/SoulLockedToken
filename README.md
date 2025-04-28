@@ -19,7 +19,9 @@ npx hardhat test test/AttackWithAA.ts
 
 4. Multiple Test
 ```aiignore
-npx hardhat test test/SoulLockedTokenMulti.ts
+npx hardhat test test/SoulLockedTokenMulti.ts //SLT
+npx hardhat test test/BinanceSBT.ts //BAAT
+npx hardhat test test/GalxeSBT.ts //GlaxePassport
 ```
 
 5. visualization
@@ -29,4 +31,9 @@ python3 -m venv venv
 source venv/bin/activate
 pip install pandas matplotlib
 python visualize.py 
+```
+
+GalxeSBT code source
+```
+https://dashboard.tenderly.co/contract/bnb/0xe84050261cb0a35982ea0f6f3d9dff4b8ed3c012/code
 ```
