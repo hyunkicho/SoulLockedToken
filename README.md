@@ -20,8 +20,10 @@ npx hardhat test test/AttackWithAA.ts
 4. Multiple Test
 ```aiignore
 npx hardhat test test/SoulLockedTokenMulti.ts //SLT
-npx hardhat test test/BinanceSBT.ts //BAAT
+npx hardhat test test/BinanceSBT.ts //BAT
 npx hardhat test test/GalxeSBT.ts //GlaxePassport
+npx hardhat test test/otterspace.ts //otterspace
+npx hardhat test test/zkMe.ts //zkme SBT
 ```
 
 5. visualization
