@@ -35,7 +35,7 @@ pip install pandas matplotlib
 python visualize.py 
 ```
 
-6. source code
+6. source code.
 
 GlaxePassport code source
 ```
