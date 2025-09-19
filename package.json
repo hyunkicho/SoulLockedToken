@@ -11,6 +11,7 @@
     "circom_tester": "^0.0.20",
     "circomlib": "^2.0.5",
     "crypto": "^1.0.1",
+    "dotenv": "^17.0.1",
     "erc5192": "^0.0.1",
     "fido2-lib": "^3.5.3",
     "hardhat": "^2.22.5",
