@@ -1,4 +1,10 @@
 {
+  "scripts": {
+    "setup-env": "node setup-env.js",
+    "start:frontend": "cd front-end/passkey-minter && npm start",
+    "build:frontend": "cd front-end/passkey-minter && npm run build",
+    "install:frontend": "cd front-end/passkey-minter && npm install"
+  },
   "dependencies": {
     "@account-abstraction/contracts": "^0.6.0",
     "@openzeppelin/contracts": "^4.9.3",

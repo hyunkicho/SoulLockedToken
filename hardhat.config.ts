@@ -6,8 +6,8 @@ import * as dotenv from "dotenv";
 
 dotenv.config(); // 🔑 .env 로드
 
-const PRIVATE_KEY = process.env.PRIVATE_KEY!;
-const SEPOLIA_RPC_URL = process.env.SEPOLIA_RPC_URL!;
+const PRIVATE_KEY = process.env.PRIVATE_KEY || "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80";
+const SEPOLIA_RPC_URL = process.env.SEPOLIA_RPC_URL || "http://127.0.0.1:8545";
 
 const config: HardhatUserConfig = {
   solidity: {
@@ -38,6 +38,10 @@ const config: HardhatUserConfig = {
   networks: {
     hardhat: {
       blockGasLimit: 100_000_000_000
+    },
+    localhost: {
+      url: "http://127.0.0.1:8545",
+      accounts: [PRIVATE_KEY],
     },
     local: {
       url: SEPOLIA_RPC_URL,
