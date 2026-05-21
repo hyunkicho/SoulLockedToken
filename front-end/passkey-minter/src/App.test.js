@@ -9,6 +9,8 @@ const mockPassKeyChecker = jest.fn();
 const mockBuildSignatureStaticCall = jest.fn();
 const mockGetAddress = jest.fn();
 const mockOwner = jest.fn();
+const mockFactoryDeploy = jest.fn();
+const mockFactoryInputs = [];
 
 jest.mock('cbor', () => ({
   decode: jest.fn(),
@@ -22,6 +24,10 @@ jest.mock('ethers', () => ({
     });
   },
   Contract: class {
+    constructor(address) {
+      this.address = address;
+    }
+
     safeMint = mockSafeMint;
     updateAuth = mockUpdateAuth;
     authCheck = mockAuthCheck;
@@ -30,6 +36,13 @@ jest.mock('ethers', () => ({
     buildSignature = {
       staticCall: mockBuildSignatureStaticCall,
     };
+  },
+  ContractFactory: class {
+    constructor(abi, bytecode, signer) {
+      mockFactoryInputs.push({ abi, bytecode, signer });
+    }
+
+    deploy = mockFactoryDeploy;
   },
   AbiCoder: {
     defaultAbiCoder: jest.fn(() => ({
@@ -93,6 +106,12 @@ describe('PasskeyFullTest', () => {
 
     mockGetAddress.mockResolvedValue('0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266');
     mockOwner.mockResolvedValue('0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266');
+    mockFactoryInputs.length = 0;
+    mockFactoryDeploy.mockResolvedValue({
+      deploymentTransaction: () => ({ hash: '0xdeploytx' }),
+      waitForDeployment: jest.fn().mockResolvedValue({}),
+      getAddress: jest.fn().mockResolvedValue('0x2222222222222222222222222222222222222222'),
+    });
     mockSafeMint.mockResolvedValue({ wait: jest.fn().mockResolvedValue({}) });
     mockUpdateAuth.mockResolvedValue({ wait: jest.fn().mockResolvedValue({}) });
     mockPassKeyChecker.mockResolvedValue(true);
@@ -105,6 +124,7 @@ describe('PasskeyFullTest', () => {
       encode: jest.fn(() => `0x${'ab'.repeat(32)}`),
     });
     solidityPacked.mockReturnValue(`0x01${'00'.repeat(6)}${'11'.repeat(32)}`);
+    window.localStorage.clear();
 
     Object.defineProperty(window, 'ethereum', {
       configurable: true,
@@ -202,5 +222,17 @@ describe('PasskeyFullTest', () => {
 
     await waitFor(() => expect(mockPassKeyChecker).toHaveBeenCalled());
     expect(mockPassKeyChecker.mock.calls[0][0].s).toBe(`0x${'0'.repeat(63)}2`);
+  });
+
+  it('deploys a Base Sepolia contract from MetaMask with the RIP-7212 verifier patched into bytecode', async () => {
+    render(<PasskeyFullTest />);
+
+    fireEvent.click(screen.getByRole('button', { name: /deploy new contract/i }));
+
+    await waitFor(() => expect(mockFactoryDeploy).toHaveBeenCalledWith('SoulLockedToken', 'SLT', true));
+    expect(mockFactoryInputs).toHaveLength(1);
+    expect(mockFactoryInputs[0].bytecode.toLowerCase()).toContain('0000000000000000000000000000000000000100');
+    expect(mockFactoryInputs[0].bytecode.toLowerCase()).not.toContain('5fbdb2315678afecb367f032d93f642f64180aa3');
+    expect(screen.getByText(/Contract deployed: 0x2222222222222222222222222222222222222222/i)).toBeInTheDocument();
   });
 });

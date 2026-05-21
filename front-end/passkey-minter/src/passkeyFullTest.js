@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { AbiCoder, BrowserProvider, Contract, solidityPacked } from 'ethers';
+import { AbiCoder, BrowserProvider, Contract, ContractFactory, solidityPacked } from 'ethers';
 import SoulLockedTokenABI from './SoulLockedToken.json';
 import SoulLockedTokenNewABI from './SoulLockedTokenNew.json';
 import { decode } from 'cbor';
@@ -26,6 +26,9 @@ const hexToUint8Array = (hex) => {
 
 const P256_CURVE_N = window.BigInt('0xffffffff00000000ffffffffffffffffbce6faada7179e84f3b9cac2fc632551');
 const P256_CURVE_N_DIV_2 = P256_CURVE_N / 2n;
+const CONTRACT_STORAGE_KEY = 'soulLockedToken.contractAddress.baseSepolia';
+const LOCAL_P256_VERIFIER = '5fbdb2315678afecb367f032d93f642f64180aa3';
+const RIP_7212_PRECOMPILE = '0000000000000000000000000000000000000100';
 
 const bytesToBigInt = (bytes) => {
     const hex = Array.from(bytes).map((byte) => byte.toString(16).padStart(2, '0')).join('');
@@ -162,6 +165,32 @@ const assertMetaMask = () => {
 
 const normalizeAddress = (address) => (address || '').toLowerCase();
 
+const getInitialContractAddress = () => {
+    try {
+        return window.localStorage?.getItem(CONTRACT_STORAGE_KEY) || config.CONTRACT_ADDRESS || '';
+    } catch (_) {
+        return config.CONTRACT_ADDRESS || '';
+    }
+};
+
+const persistContractAddress = (address) => {
+    try {
+        window.localStorage?.setItem(CONTRACT_STORAGE_KEY, address);
+    } catch (_) {
+        // localStorage can be disabled in some browser privacy modes. Runtime state still works.
+    }
+};
+
+const patchP256VerifierBytecode = (bytecode) => {
+    const lowerBytecode = bytecode.toLowerCase();
+    const occurrences = lowerBytecode.split(LOCAL_P256_VERIFIER).length - 1;
+    if (occurrences !== 1) {
+        throw new Error(`Expected exactly one local P256 verifier address in bytecode, found ${occurrences}.`);
+    }
+
+    return bytecode.replace(new RegExp(LOCAL_P256_VERIFIER, 'i'), RIP_7212_PRECOMPILE);
+};
+
 const ensureConfiguredNetwork = async () => {
     if (!window.ethereum?.request || !config.CHAIN_ID) {
         return;
@@ -228,10 +257,10 @@ const getConnectedSigner = async () => {
     return { provider, signer, address };
 };
 
-const getConfiguredContract = async (signer) => {
-    const contractAddress = config.CONTRACT_ADDRESS;
+const getConfiguredContract = async (signer, selectedContractAddress) => {
+    const contractAddress = selectedContractAddress || config.CONTRACT_ADDRESS;
     if (!contractAddress) {
-        throw new Error('REACT_APP_CONTRACT_ADDRESS is not set. Deploy the contract first and set the Base Sepolia address.');
+        throw new Error('Contract address is not set. Deploy a Base Sepolia contract first.');
     }
 
     const legacyContract = new Contract(contractAddress, SoulLockedTokenABI.abi, signer);
@@ -292,6 +321,9 @@ function PasskeyFullTest() {
     const [latestPasskeyContext, setLatestPasskeyContext] = useState(null);
     const [readVerifyResult, setReadVerifyResult] = useState(null);
     const [contractOwnerAddress, setContractOwnerAddress] = useState('');
+    const [contractAddress, setContractAddress] = useState(getInitialContractAddress);
+    const [isDeploying, setIsDeploying] = useState(false);
+    const [deploymentTxHash, setDeploymentTxHash] = useState('');
 
     const addLog = (message, status = 'info') => {
         setLogs(prev => [...prev, { message, status }]);
@@ -328,18 +360,61 @@ function PasskeyFullTest() {
             setUserAddress(address);
             addLog(`Wallet connected: ${address}`, 'success');
 
-            const { contract } = await getConfiguredContract(signer);
-            const ownerAddress = await getContractOwner(contract);
-            setContractOwnerAddress(ownerAddress);
+            if (contractAddress) {
+                const { contract } = await getConfiguredContract(signer, contractAddress);
+                const ownerAddress = await getContractOwner(contract);
+                setContractOwnerAddress(ownerAddress);
 
-            if (ownerAddress && normalizeAddress(address) !== normalizeAddress(ownerAddress)) {
-                addLog(`Connected wallet is not the contract owner. Switch MetaMask to ${ownerAddress} before running the full test.`, 'error');
-            } else if (ownerAddress) {
-                addLog('Connected wallet matches the contract owner.', 'success');
+                if (ownerAddress && normalizeAddress(address) !== normalizeAddress(ownerAddress)) {
+                    addLog(`Connected wallet is not the contract owner. Switch MetaMask to ${ownerAddress} or deploy a new contract from this wallet.`, 'error');
+                } else if (ownerAddress) {
+                    addLog('Connected wallet matches the contract owner.', 'success');
+                }
+            } else {
+                addLog('No contract selected. Deploy a contract before running the full test.', 'info');
             }
         } catch (err) {
             console.error(err);
             addLog(`MetaMask connection failed: ${err.message}`, 'error');
+        }
+    };
+
+    const handleDeployContract = async () => {
+        setIsDeploying(true);
+        setFinalStatus(null);
+        setLatestPasskeyContext(null);
+        setReadVerifyResult(null);
+        setPasskeyStatus('Not Checked');
+
+        try {
+            addLog('Preparing Base Sepolia deployment from connected wallet...');
+            const { signer, address } = await requestWalletConnection();
+            setUserAddress(address);
+            addLog(`Wallet connected: ${address}`, 'success');
+
+            const bytecode = patchP256VerifierBytecode(SoulLockedTokenNewABI.bytecode);
+            const factory = new ContractFactory(SoulLockedTokenNewABI.abi, bytecode, signer);
+            const deployedContract = await factory.deploy('SoulLockedToken', 'SLT', true);
+            const txHash = deployedContract.deploymentTransaction()?.hash || '';
+            setDeploymentTxHash(txHash);
+            if (txHash) {
+                addLog(`Contract deployment transaction sent: ${txHash}`, 'info');
+            } else {
+                addLog('Contract deployment transaction sent.', 'info');
+            }
+
+            await deployedContract.waitForDeployment();
+            const deployedAddress = await deployedContract.getAddress();
+            persistContractAddress(deployedAddress);
+            setContractAddress(deployedAddress);
+            setContractOwnerAddress(address);
+            addLog(`Contract deployed: ${deployedAddress}`, 'success');
+            addLog('Connected wallet is now the contract owner.', 'success');
+        } catch (err) {
+            console.error(err);
+            addLog(`Contract deployment failed: ${err.reason || err.message}`, 'error');
+        } finally {
+            setIsDeploying(false);
         }
     };
 
@@ -365,7 +440,7 @@ function PasskeyFullTest() {
             setUserAddress(userAddress);
             addLog(`Wallet connected: ${userAddress}`, 'success');
 
-            const { contract, usesNewSignatureInterface } = await getConfiguredContract(signer);
+            const { contract, usesNewSignatureInterface } = await getConfiguredContract(signer, contractAddress);
             addLog(
                 `Contract interface detected: ${usesNewSignatureInterface ? 'SoulLockedTokenNew' : 'SoulLockedToken'}`,
                 'info'
@@ -373,7 +448,7 @@ function PasskeyFullTest() {
             const ownerAddress = await getContractOwner(contract);
             setContractOwnerAddress(ownerAddress);
             if (ownerAddress && normalizeAddress(userAddress) !== normalizeAddress(ownerAddress)) {
-                throw new Error(`Connected wallet ${userAddress} is not the contract owner. Switch MetaMask to ${ownerAddress} and try again.`);
+                throw new Error(`Connected wallet ${userAddress} is not the contract owner. Switch MetaMask to ${ownerAddress}, or deploy a new contract from this wallet.`);
             }
 
             // 1. REGISTRATION
@@ -490,7 +565,7 @@ function PasskeyFullTest() {
             }
 
             const { signer } = connection;
-            const { contract } = await getConfiguredContract(signer);
+            const { contract } = await getConfiguredContract(signer, contractAddress);
             const verificationPayload = await requestVerificationPayload(latestPasskeyContext);
             const isValid = await waitForPassKeyChecker(contract, verificationPayload.signature, verificationPayload.challenge);
             const authInfo = await contract.authCheck(latestPasskeyContext.tokenId, latestPasskeyContext.ownerAddress);
@@ -575,7 +650,7 @@ function PasskeyFullTest() {
                     <div style={{ display: 'flex', gap: '10px', marginBottom: '15px' }}>
                         <button
                             onClick={handleConnectWallet}
-                            disabled={isLoading || isReadVerifying}
+                            disabled={isLoading || isReadVerifying || isDeploying}
                             style={{
                                 flex: 1,
                                 padding: '12px',
@@ -584,7 +659,7 @@ function PasskeyFullTest() {
                                 backgroundColor: '#ffffff',
                                 color: '#000000',
                                 border: '2px solid #000000',
-                                cursor: (isLoading || isReadVerifying) ? 'not-allowed' : 'pointer'
+                                cursor: (isLoading || isReadVerifying || isDeploying) ? 'not-allowed' : 'pointer'
                             }}
                         >
                             CONNECT METAMASK
@@ -592,9 +667,28 @@ function PasskeyFullTest() {
                     </div>
 
                     <div style={{ display: 'flex', gap: '10px', marginBottom: '15px' }}>
+                        <button
+                            onClick={handleDeployContract}
+                            disabled={isLoading || isReadVerifying || isDeploying}
+                            style={{
+                                flex: 1,
+                                padding: '12px',
+                                fontSize: '14px',
+                                fontWeight: 'bold',
+                                backgroundColor: isDeploying ? '#cccccc' : '#ffffff',
+                                color: '#000000',
+                                border: '2px solid #000000',
+                                cursor: (isLoading || isReadVerifying || isDeploying) ? 'not-allowed' : 'pointer'
+                            }}
+                        >
+                            {isDeploying ? 'DEPLOYING CONTRACT...' : 'DEPLOY NEW CONTRACT'}
+                        </button>
+                    </div>
+
+                    <div style={{ display: 'flex', gap: '10px', marginBottom: '15px' }}>
                         <button 
                             onClick={handleFullTest} 
-                            disabled={isLoading}
+                            disabled={isLoading || isDeploying}
                             style={{
                                 flex: 1,
                                 padding: '15px',
@@ -603,7 +697,7 @@ function PasskeyFullTest() {
                                 backgroundColor: isLoading ? '#cccccc' : '#000000',
                                 color: '#ffffff',
                                 border: '2px solid #000000',
-                                cursor: isLoading ? 'not-allowed' : 'pointer'
+                                cursor: (isLoading || isDeploying) ? 'not-allowed' : 'pointer'
                             }}
                         >
                             {isLoading ? 'EXECUTING FULL TEST...' : 'EXECUTE FULL TEST'}
@@ -780,6 +874,26 @@ function PasskeyFullTest() {
                         <strong>WALLET:</strong><br/>
                         <span style={{ fontSize: '14px', wordBreak: 'break-all' }}>
                             {userAddress || 'Not Connected'}
+                        </span>
+                    </div>
+                    <div style={{
+                        padding: '8px',
+                        backgroundColor: '#ffffff',
+                        border: '1px solid #000000'
+                    }}>
+                        <strong>CONTRACT:</strong><br/>
+                        <span style={{ fontSize: '14px', wordBreak: 'break-all' }}>
+                            {contractAddress || 'Not Deployed'}
+                        </span>
+                    </div>
+                    <div style={{
+                        padding: '8px',
+                        backgroundColor: '#ffffff',
+                        border: '1px solid #000000'
+                    }}>
+                        <strong>DEPLOY TX:</strong><br/>
+                        <span style={{ fontSize: '14px', wordBreak: 'break-all' }}>
+                            {deploymentTxHash || 'Not Run'}
                         </span>
                     </div>
                     <div style={{

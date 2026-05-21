@@ -1,0 +1,17 @@
+.env
+.env.*
+.vercel
+node_modules
+**/node_modules
+front-end/passkey-minter/build
+cache
+artifacts
+typechain
+typechain-types
+coverage
+result_test
+test
+fig_*.png
+sbt_*.png
+slt_*.png
+*.jsonl
