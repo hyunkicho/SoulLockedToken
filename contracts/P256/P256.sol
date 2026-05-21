@@ -5,8 +5,8 @@ import "hardhat/console.sol";
  * Helper library for external contracts to verify P256 signatures.
  **/
 library P256 {
-    //Should Changd this is P256 Verifier address
-    address constant VERIFIER = 0x5FbDB2315678afecb367f032d93F642f64180aa3;
+    // RIP-7212 P-256 verifier precompile on Base Sepolia.
+    address constant VERIFIER = 0x0000000000000000000000000000000000000100;
 
     function verifySignatureAllowMalleability(
         bytes32 message_hash,

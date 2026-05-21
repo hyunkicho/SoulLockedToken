@@ -8,6 +8,7 @@ dotenv.config(); // 🔑 .env 로드
 
 const PRIVATE_KEY = process.env.PRIVATE_KEY || "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80";
 const SEPOLIA_RPC_URL = process.env.SEPOLIA_RPC_URL || "http://127.0.0.1:8545";
+const BASE_SEPOLIA_RPC_URL = process.env.BASE_SEPOLIA_RPC_URL || "https://sepolia.base.org";
 
 const config: HardhatUserConfig = {
   solidity: {
@@ -49,6 +50,11 @@ const config: HardhatUserConfig = {
     },
     sepolia: {
       url: SEPOLIA_RPC_URL,
+      accounts: [PRIVATE_KEY],
+    },
+    baseSepolia: {
+      url: BASE_SEPOLIA_RPC_URL,
+      chainId: 84532,
       accounts: [PRIVATE_KEY],
     },
   },
