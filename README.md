@@ -58,6 +58,6 @@ BABT source code
 https://bscscan.com/token/0x2b09d47d550061f995a3b5c6f0fd58005215d7c8?a=0x2f1FbD2Ac7a01E4fC6e207EeAac0C875A464dC7D
 ```
 
-Working Demo
+Working Demo - Need Base Sepolia Eth for a test
 https://soul-locked-token.vercel.app/
 
