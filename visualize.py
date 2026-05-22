@@ -14,9 +14,9 @@ df = pd.DataFrame([{
     "tokenId": d["tokenId"],
     "signTime": d["time"]["sign"],
     "verifyTime": d["time"]["verify"],
-    "mintGas": int(d["gasUsed"]["mint"]),
-    "updateGas": int(d["gasUsed"]["update"]),
-    "burnGas": int(d["gasUsed"]["burn"]),
+    "mintGas": (d["gasUsed"]["mint"]),
+    "updateGas": (d["gasUsed"]["update"]),
+    "burnGas": (d["gasUsed"]["burn"]),
 } for d in clean_data])
 
 # 4. 시각화 시작

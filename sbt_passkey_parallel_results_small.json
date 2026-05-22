@@ -1,0 +1,1302 @@
+[
+  {
+    "tokenId": 0,
+    "gasUsed": {
+      "mint": "186430",
+      "update": "449805",
+      "burn": "103469"
+    },
+    "time": {
+      "sign": 26.767834,
+      "verify": 185.604,
+      "ownerCall": 776.571583
+    }
+  },
+  {
+    "tokenId": 1,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "457647",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 34.833084,
+      "verify": 267.051,
+      "ownerCall": 685.503416
+    }
+  },
+  {
+    "tokenId": 2,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "449957",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 43.962917,
+      "verify": 342.913833,
+      "ownerCall": 599.626209
+    }
+  },
+  {
+    "tokenId": 3,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "458106",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 52.7725,
+      "verify": 417.561208,
+      "ownerCall": 515.31525
+    }
+  },
+  {
+    "tokenId": 4,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "461512",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 61.569583,
+      "verify": 494.106541,
+      "ownerCall": 429.345584
+    }
+  },
+  {
+    "tokenId": 5,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "456020",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 70.521416,
+      "verify": 568.438375,
+      "ownerCall": 345.645083
+    }
+  },
+  {
+    "tokenId": 6,
+    "gasUsed": {
+      "mint": "152230",
+      "update": "453804",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 79.455167,
+      "verify": 643.679542,
+      "ownerCall": 260.991417
+    }
+  },
+  {
+    "tokenId": 7,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "458687",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 88.778084,
+      "verify": 720.639542,
+      "ownerCall": 175.136375
+    }
+  },
+  {
+    "tokenId": 8,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "451739",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 97.457458,
+      "verify": 793.361834,
+      "ownerCall": 92.734167
+    }
+  },
+  {
+    "tokenId": 9,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "455624",
+      "burn": "101985"
+    },
+    "time": {
+      "sign": 106.25275,
+      "verify": 868.221042,
+      "ownerCall": 8.736833
+    }
+  },
+  {
+    "tokenId": 10,
+    "gasUsed": {
+      "mint": "186454",
+      "update": "456049",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 19.611333,
+      "verify": 173.59625,
+      "ownerCall": 778.517458
+    }
+  },
+  {
+    "tokenId": 11,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "455094",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 28.403458,
+      "verify": 250.652833,
+      "ownerCall": 692.479167
+    }
+  },
+  {
+    "tokenId": 12,
+    "gasUsed": {
+      "mint": "152242",
+      "update": "460999",
+      "burn": "103457"
+    },
+    "time": {
+      "sign": 37.603542,
+      "verify": 326.826375,
+      "ownerCall": 607.057459
+    }
+  },
+  {
+    "tokenId": 13,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "455866",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 46.498708,
+      "verify": 403.097708,
+      "ownerCall": 521.837958
+    }
+  },
+  {
+    "tokenId": 14,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "463946",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 55.1485,
+      "verify": 481.695333,
+      "ownerCall": 434.43275
+    }
+  },
+  {
+    "tokenId": 15,
+    "gasUsed": {
+      "mint": "152242",
+      "update": "446900",
+      "burn": "103904"
+    },
+    "time": {
+      "sign": 63.983166,
+      "verify": 556.306,
+      "ownerCall": 351.434084
+    }
+  },
+  {
+    "tokenId": 16,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "455616",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 72.039584,
+      "verify": 633.826375,
+      "ownerCall": 265.254
+    }
+  },
+  {
+    "tokenId": 17,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "452466",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 80.726708,
+      "verify": 710.5745,
+      "ownerCall": 179.634291
+    }
+  },
+  {
+    "tokenId": 18,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "452955",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 89.391334,
+      "verify": 786.51275,
+      "ownerCall": 94.780708
+    }
+  },
+  {
+    "tokenId": 19,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "458896",
+      "burn": "101985"
+    },
+    "time": {
+      "sign": 98.097417,
+      "verify": 864.410459,
+      "ownerCall": 7.940208
+    }
+  },
+  {
+    "tokenId": 20,
+    "gasUsed": {
+      "mint": "186454",
+      "update": "460166",
+      "burn": "103469"
+    },
+    "time": {
+      "sign": 18.170583,
+      "verify": 175.949875,
+      "ownerCall": 784.656
+    }
+  },
+  {
+    "tokenId": 21,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "456836",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 27.472666,
+      "verify": 252.388417,
+      "ownerCall": 698.7485
+    }
+  },
+  {
+    "tokenId": 22,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "457419",
+      "burn": "103904"
+    },
+    "time": {
+      "sign": 36.514042,
+      "verify": 330.624875,
+      "ownerCall": 611.393333
+    }
+  },
+  {
+    "tokenId": 23,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "455998",
+      "burn": "103469"
+    },
+    "time": {
+      "sign": 45.414791,
+      "verify": 409.355667,
+      "ownerCall": 524.223458
+    }
+  },
+  {
+    "tokenId": 24,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "458513",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 54.116625,
+      "verify": 487.116292,
+      "ownerCall": 437.703959
+    }
+  },
+  {
+    "tokenId": 25,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "457116",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 63.068625,
+      "verify": 565.892333,
+      "ownerCall": 349.873917
+    }
+  },
+  {
+    "tokenId": 26,
+    "gasUsed": {
+      "mint": "152242",
+      "update": "453505",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 71.823167,
+      "verify": 643.637084,
+      "ownerCall": 263.2445
+    }
+  },
+  {
+    "tokenId": 27,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "450011",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 80.875625,
+      "verify": 719.207292,
+      "ownerCall": 178.539209
+    }
+  },
+  {
+    "tokenId": 28,
+    "gasUsed": {
+      "mint": "152242",
+      "update": "455964",
+      "burn": "103457"
+    },
+    "time": {
+      "sign": 89.490875,
+      "verify": 796.13575,
+      "ownerCall": 92.850958
+    }
+  },
+  {
+    "tokenId": 29,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "450437",
+      "burn": "101985"
+    },
+    "time": {
+      "sign": 98.46875,
+      "verify": 872.529875,
+      "ownerCall": 7.350917
+    }
+  },
+  {
+    "tokenId": 30,
+    "gasUsed": {
+      "mint": "186454",
+      "update": "460100",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 22.968375,
+      "verify": 211.382417,
+      "ownerCall": 905.412625
+    }
+  },
+  {
+    "tokenId": 31,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "445754",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 33.817167,
+      "verify": 296.562334,
+      "ownerCall": 809.063209
+    }
+  },
+  {
+    "tokenId": 32,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "453999",
+      "burn": "103469"
+    },
+    "time": {
+      "sign": 44.844667,
+      "verify": 374.693083,
+      "ownerCall": 719.820542
+    }
+  },
+  {
+    "tokenId": 33,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "451666",
+      "burn": "103469"
+    },
+    "time": {
+      "sign": 56.388625,
+      "verify": 454.92925,
+      "ownerCall": 627.789875
+    }
+  },
+  {
+    "tokenId": 34,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "448691",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 67.399417,
+      "verify": 530.243708,
+      "ownerCall": 541.242792
+    }
+  },
+  {
+    "tokenId": 35,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "455019",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 78.20025,
+      "verify": 606.7005,
+      "ownerCall": 453.691708
+    }
+  },
+  {
+    "tokenId": 36,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "455659",
+      "burn": "103469"
+    },
+    "time": {
+      "sign": 89.430084,
+      "verify": 703.5095,
+      "ownerCall": 345.457084
+    }
+  },
+  {
+    "tokenId": 37,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "453166",
+      "burn": "103469"
+    },
+    "time": {
+      "sign": 100.260084,
+      "verify": 824.531,
+      "ownerCall": 213.211417
+    }
+  },
+  {
+    "tokenId": 38,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "452829",
+      "burn": "103469"
+    },
+    "time": {
+      "sign": 112.72125,
+      "verify": 907.609833,
+      "ownerCall": 117.520084
+    }
+  },
+  {
+    "tokenId": 39,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "468154",
+      "burn": "101985"
+    },
+    "time": {
+      "sign": 123.463083,
+      "verify": 1005.524791,
+      "ownerCall": 9.32125
+    }
+  },
+  {
+    "tokenId": 40,
+    "gasUsed": {
+      "mint": "186454",
+      "update": "458864",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 23.267833,
+      "verify": 191.970958,
+      "ownerCall": 853.802875
+    }
+  },
+  {
+    "tokenId": 41,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "453269",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 36.703458,
+      "verify": 267.948708,
+      "ownerCall": 764.143625
+    }
+  },
+  {
+    "tokenId": 42,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "455650",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 48.426125,
+      "verify": 356.677583,
+      "ownerCall": 663.59775
+    }
+  },
+  {
+    "tokenId": 43,
+    "gasUsed": {
+      "mint": "152242",
+      "update": "454593",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 58.418375,
+      "verify": 437.160167,
+      "ownerCall": 573.025625
+    }
+  },
+  {
+    "tokenId": 44,
+    "gasUsed": {
+      "mint": "152242",
+      "update": "458173",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 68.273708,
+      "verify": 520.1245,
+      "ownerCall": 480.1525
+    }
+  },
+  {
+    "tokenId": 45,
+    "gasUsed": {
+      "mint": "152242",
+      "update": "451656",
+      "burn": "103904"
+    },
+    "time": {
+      "sign": 77.973875,
+      "verify": 608.774417,
+      "ownerCall": 382.406875
+    }
+  },
+  {
+    "tokenId": 46,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "445863",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 85.927708,
+      "verify": 689.043167,
+      "ownerCall": 292.432708
+    }
+  },
+  {
+    "tokenId": 47,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "458279",
+      "burn": "103892"
+    },
+    "time": {
+      "sign": 95.224334,
+      "verify": 771.587625,
+      "ownerCall": 200.296459
+    }
+  },
+  {
+    "tokenId": 48,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "452935",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 104.662292,
+      "verify": 858.662125,
+      "ownerCall": 103.563416
+    }
+  },
+  {
+    "tokenId": 49,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "455714",
+      "burn": "101985"
+    },
+    "time": {
+      "sign": 114.138458,
+      "verify": 944.593583,
+      "ownerCall": 7.824083
+    }
+  },
+  {
+    "tokenId": 50,
+    "gasUsed": {
+      "mint": "186442",
+      "update": "448306",
+      "burn": "103457"
+    },
+    "time": {
+      "sign": 24.941792,
+      "verify": 191.975667,
+      "ownerCall": 872.169709
+    }
+  },
+  {
+    "tokenId": 51,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "451781",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 35.773709,
+      "verify": 268.949625,
+      "ownerCall": 782.879041
+    }
+  },
+  {
+    "tokenId": 52,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "453636",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 47.2275,
+      "verify": 353.536792,
+      "ownerCall": 686.568958
+    }
+  },
+  {
+    "tokenId": 53,
+    "gasUsed": {
+      "mint": "152242",
+      "update": "445962",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 59.065166,
+      "verify": 435.327042,
+      "ownerCall": 592.71375
+    }
+  },
+  {
+    "tokenId": 54,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "451176",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 68.794792,
+      "verify": 516.212167,
+      "ownerCall": 501.594875
+    }
+  },
+  {
+    "tokenId": 55,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "456858",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 78.855459,
+      "verify": 655.098333,
+      "ownerCall": 352.33375
+    }
+  },
+  {
+    "tokenId": 56,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "454652",
+      "burn": "103469"
+    },
+    "time": {
+      "sign": 88.712417,
+      "verify": 731.820458,
+      "ownerCall": 265.448833
+    }
+  },
+  {
+    "tokenId": 57,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "460320",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 98.005916,
+      "verify": 809.330292,
+      "ownerCall": 178.2935
+    }
+  },
+  {
+    "tokenId": 58,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "449999",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 107.4025,
+      "verify": 884.464042,
+      "ownerCall": 93.467541
+    }
+  },
+  {
+    "tokenId": 59,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "454496",
+      "burn": "101985"
+    },
+    "time": {
+      "sign": 116.666625,
+      "verify": 961.231542,
+      "ownerCall": 7.054792
+    }
+  },
+  {
+    "tokenId": 60,
+    "gasUsed": {
+      "mint": "186454",
+      "update": "456285",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 17.811792,
+      "verify": 172.959334,
+      "ownerCall": 828.427333
+    }
+  },
+  {
+    "tokenId": 61,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "453174",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 26.559083,
+      "verify": 250.3685,
+      "ownerCall": 742.196667
+    }
+  },
+  {
+    "tokenId": 62,
+    "gasUsed": {
+      "mint": "152242",
+      "update": "466916",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 35.481041,
+      "verify": 338.532917,
+      "ownerCall": 645.177666
+    }
+  },
+  {
+    "tokenId": 63,
+    "gasUsed": {
+      "mint": "152242",
+      "update": "453558",
+      "burn": "103904"
+    },
+    "time": {
+      "sign": 44.253042,
+      "verify": 427.753416,
+      "ownerCall": 547.197542
+    }
+  },
+  {
+    "tokenId": 64,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "454743",
+      "burn": "103469"
+    },
+    "time": {
+      "sign": 52.991334,
+      "verify": 514.735584,
+      "ownerCall": 451.560083
+    }
+  },
+  {
+    "tokenId": 65,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "448871",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 61.861792,
+      "verify": 593.753334,
+      "ownerCall": 363.655208
+    }
+  },
+  {
+    "tokenId": 66,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "461809",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 70.756,
+      "verify": 675.53725,
+      "ownerCall": 272.935458
+    }
+  },
+  {
+    "tokenId": 67,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "461122",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 79.543916,
+      "verify": 755.979917,
+      "ownerCall": 184.907
+    }
+  },
+  {
+    "tokenId": 68,
+    "gasUsed": {
+      "mint": "152242",
+      "update": "456479",
+      "burn": "103469"
+    },
+    "time": {
+      "sign": 88.241167,
+      "verify": 833.849458,
+      "ownerCall": 98.410417
+    }
+  },
+  {
+    "tokenId": 69,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "446374",
+      "burn": "101985"
+    },
+    "time": {
+      "sign": 96.455458,
+      "verify": 914.571792,
+      "ownerCall": 8.855083
+    }
+  },
+  {
+    "tokenId": 70,
+    "gasUsed": {
+      "mint": "186454",
+      "update": "451585",
+      "burn": "103904"
+    },
+    "time": {
+      "sign": 18.417292,
+      "verify": 175.306667,
+      "ownerCall": 790.247292
+    }
+  },
+  {
+    "tokenId": 71,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "462212",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 27.637542,
+      "verify": 254.026791,
+      "ownerCall": 702.15625
+    }
+  },
+  {
+    "tokenId": 72,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "456980",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 36.778291,
+      "verify": 330.813792,
+      "ownerCall": 616.206667
+    }
+  },
+  {
+    "tokenId": 73,
+    "gasUsed": {
+      "mint": "152242",
+      "update": "452495",
+      "burn": "103469"
+    },
+    "time": {
+      "sign": 45.790417,
+      "verify": 408.3645,
+      "ownerCall": 529.590042
+    }
+  },
+  {
+    "tokenId": 74,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "451912",
+      "burn": "103457"
+    },
+    "time": {
+      "sign": 54.027792,
+      "verify": 487.488375,
+      "ownerCall": 441.97325
+    }
+  },
+  {
+    "tokenId": 75,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "459484",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 63.326792,
+      "verify": 565.153584,
+      "ownerCall": 354.997167
+    }
+  },
+  {
+    "tokenId": 76,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "451195",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 72.483791,
+      "verify": 641.939292,
+      "ownerCall": 268.999833
+    }
+  },
+  {
+    "tokenId": 77,
+    "gasUsed": {
+      "mint": "152242",
+      "update": "452536",
+      "burn": "103445"
+    },
+    "time": {
+      "sign": 81.728833,
+      "verify": 718.789458,
+      "ownerCall": 182.849583
+    }
+  },
+  {
+    "tokenId": 78,
+    "gasUsed": {
+      "mint": "152242",
+      "update": "462755",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 90.794375,
+      "verify": 797.502208,
+      "ownerCall": 94.918834
+    }
+  },
+  {
+    "tokenId": 79,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "457733",
+      "burn": "101976"
+    },
+    "time": {
+      "sign": 99.738625,
+      "verify": 875.976625,
+      "ownerCall": 7.408583
+    }
+  },
+  {
+    "tokenId": 80,
+    "gasUsed": {
+      "mint": "186454",
+      "update": "455322",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 18.035167,
+      "verify": 180.539792,
+      "ownerCall": 801.257
+    }
+  },
+  {
+    "tokenId": 81,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "454943",
+      "burn": "103469"
+    },
+    "time": {
+      "sign": 26.186417,
+      "verify": 260.179417,
+      "ownerCall": 712.645375
+    }
+  },
+  {
+    "tokenId": 82,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "459505",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 35.508208,
+      "verify": 338.987417,
+      "ownerCall": 624.522875
+    }
+  },
+  {
+    "tokenId": 83,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "452325",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 44.569708,
+      "verify": 417.236042,
+      "ownerCall": 537.215334
+    }
+  },
+  {
+    "tokenId": 84,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "459689",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 53.836791,
+      "verify": 496.095875,
+      "ownerCall": 448.998583
+    }
+  },
+  {
+    "tokenId": 85,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "459685",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 63.008375,
+      "verify": 575.89,
+      "ownerCall": 360.542625
+    }
+  },
+  {
+    "tokenId": 86,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "455499",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 72.272792,
+      "verify": 654.83725,
+      "ownerCall": 272.286917
+    }
+  },
+  {
+    "tokenId": 87,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "461263",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 81.396042,
+      "verify": 734.257459,
+      "ownerCall": 183.618834
+    }
+  },
+  {
+    "tokenId": 88,
+    "gasUsed": {
+      "mint": "152242",
+      "update": "447498",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 90.602958,
+      "verify": 812.429875,
+      "ownerCall": 96.122375
+    }
+  },
+  {
+    "tokenId": 89,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "460636",
+      "burn": "101985"
+    },
+    "time": {
+      "sign": 99.842583,
+      "verify": 892.05575,
+      "ownerCall": 7.122125
+    }
+  },
+  {
+    "tokenId": 90,
+    "gasUsed": {
+      "mint": "186442",
+      "update": "458821",
+      "burn": "103457"
+    },
+    "time": {
+      "sign": 18.272,
+      "verify": 182.210709,
+      "ownerCall": 825.064125
+    }
+  },
+  {
+    "tokenId": 91,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "456086",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 27.348666,
+      "verify": 262.871916,
+      "ownerCall": 735.624375
+    }
+  },
+  {
+    "tokenId": 92,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "447072",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 36.546917,
+      "verify": 341.432167,
+      "ownerCall": 648.045875
+    }
+  },
+  {
+    "tokenId": 93,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "458539",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 45.70725,
+      "verify": 422.1825,
+      "ownerCall": 558.330125
+    }
+  },
+  {
+    "tokenId": 94,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "459586",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 54.838708,
+      "verify": 503.761083,
+      "ownerCall": 468.991625
+    }
+  },
+  {
+    "tokenId": 95,
+    "gasUsed": {
+      "mint": "152242",
+      "update": "454502",
+      "burn": "103469"
+    },
+    "time": {
+      "sign": 64.010792,
+      "verify": 583.065959,
+      "ownerCall": 380.638541
+    }
+  },
+  {
+    "tokenId": 96,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "452141",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 73.027875,
+      "verify": 662.382834,
+      "ownerCall": 292.367625
+    }
+  },
+  {
+    "tokenId": 97,
+    "gasUsed": {
+      "mint": "152242",
+      "update": "457259",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 82.211459,
+      "verify": 743.277459,
+      "ownerCall": 202.261541
+    }
+  },
+  {
+    "tokenId": 98,
+    "gasUsed": {
+      "mint": "152254",
+      "update": "454691",
+      "burn": "103481"
+    },
+    "time": {
+      "sign": 91.361084,
+      "verify": 824.19225,
+      "ownerCall": 112.228583
+    }
+  },
+  {
+    "tokenId": 99,
+    "gasUsed": {
+      "mint": "152230",
+      "update": "451415",
+      "burn": "101985"
+    },
+    "time": {
+      "sign": 100.2525,
+      "verify": 916.6985,
+      "ownerCall": 10.15875
+    }
+  }
+]

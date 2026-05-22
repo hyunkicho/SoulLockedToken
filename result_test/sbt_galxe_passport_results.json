@@ -1,0 +1,802 @@
+[
+  {
+    "iteration": 0,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "54816",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 1,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 2,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 3,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 4,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 5,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 6,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 7,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 8,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 9,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 10,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 11,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 12,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 13,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 14,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 15,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 16,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 17,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 18,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 19,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 20,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 21,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 22,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 23,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 24,
+    "gasUsed": {
+      "mint": "100372",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 25,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 26,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 27,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 28,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 29,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 30,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 31,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 32,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 33,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 34,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 35,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 36,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 37,
+    "gasUsed": {
+      "mint": "100372",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 38,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 39,
+    "gasUsed": {
+      "mint": "100372",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 40,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 41,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 42,
+    "gasUsed": {
+      "mint": "100372",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 43,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 44,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 45,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 46,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 47,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 48,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 49,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 50,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 51,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 52,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 53,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 54,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 55,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 56,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 57,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 58,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 59,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 60,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 61,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 62,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 63,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 64,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 65,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 66,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 67,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 68,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 69,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 70,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 71,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 72,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 73,
+    "gasUsed": {
+      "mint": "100372",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 74,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 75,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 76,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 77,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 78,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 79,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 80,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 81,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 82,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 83,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 84,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41136",
+      "burn": "39597"
+    }
+  },
+  {
+    "iteration": 85,
+    "gasUsed": {
+      "mint": "100372",
+      "revoke": "41145",
+      "burn": "39607"
+    }
+  },
+  {
+    "iteration": 86,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41145",
+      "burn": "39607"
+    }
+  },
+  {
+    "iteration": 87,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41145",
+      "burn": "39607"
+    }
+  },
+  {
+    "iteration": 88,
+    "gasUsed": {
+      "mint": "100372",
+      "revoke": "41145",
+      "burn": "39607"
+    }
+  },
+  {
+    "iteration": 89,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41145",
+      "burn": "39607"
+    }
+  },
+  {
+    "iteration": 90,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41145",
+      "burn": "39607"
+    }
+  },
+  {
+    "iteration": 91,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41145",
+      "burn": "39607"
+    }
+  },
+  {
+    "iteration": 92,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41145",
+      "burn": "39607"
+    }
+  },
+  {
+    "iteration": 93,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41145",
+      "burn": "39607"
+    }
+  },
+  {
+    "iteration": 94,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41145",
+      "burn": "39607"
+    }
+  },
+  {
+    "iteration": 95,
+    "gasUsed": {
+      "mint": "100372",
+      "revoke": "41145",
+      "burn": "39607"
+    }
+  },
+  {
+    "iteration": 96,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41145",
+      "burn": "39607"
+    }
+  },
+  {
+    "iteration": 97,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41145",
+      "burn": "39607"
+    }
+  },
+  {
+    "iteration": 98,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41145",
+      "burn": "39607"
+    }
+  },
+  {
+    "iteration": 99,
+    "gasUsed": {
+      "mint": "100384",
+      "revoke": "41145",
+      "burn": "39607"
+    }
+  }
+]

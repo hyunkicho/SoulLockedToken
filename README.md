@@ -42,7 +42,7 @@ GlaxePassport code source
 https://dashboard.tenderly.co/contract/bnb/0xe84050261cb0a35982ea0f6f3d9dff4b8ed3c012/code
 ```
 
-OtterSpace source code
+human.tech, Holonym V3 source code
 ```
 https://optimistic.etherscan.io/token/0x2aa822e264f8cc31a2b9c22f39e5551241e94dfb#code
 ```
@@ -50,10 +50,14 @@ https://optimistic.etherscan.io/token/0x2aa822e264f8cc31a2b9c22f39e5551241e94dfb
 zkme source code
 ```
 https://polygonscan.com/address/0x333e79aeaa286644d2b2e700c330e364ccbb631a#code
+https://polygonscan.com/token/0x5c2bfcf9c17cd53d55033769727196736cd188b3?a=0x044e9063944D79dd13550AcCF384CFC768C51D5C
 ```
 
 BABT source code
 ```
 https://bscscan.com/token/0x2b09d47d550061f995a3b5c6f0fd58005215d7c8?a=0x2f1FbD2Ac7a01E4fC6e207EeAac0C875A464dC7D
 ```
+
+Working Demo - Need Base Sepolia Eth for a test
+https://soul-locked-token.vercel.app/
 

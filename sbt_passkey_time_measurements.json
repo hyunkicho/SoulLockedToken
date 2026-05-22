@@ -1,0 +1,802 @@
+[
+  {
+    "tokenId": 0,
+    "time": {
+      "sign": 211.634459,
+      "verify": 221.917542,
+      "ownerCall": 207.404833
+    }
+  },
+  {
+    "tokenId": 1,
+    "time": {
+      "sign": 259.222625,
+      "verify": 203.995958,
+      "ownerCall": 208.873667
+    }
+  },
+  {
+    "tokenId": 2,
+    "time": {
+      "sign": 206.74625,
+      "verify": 209.088917,
+      "ownerCall": 204.641041
+    }
+  },
+  {
+    "tokenId": 3,
+    "time": {
+      "sign": 212.961667,
+      "verify": 204.973667,
+      "ownerCall": 214.064375
+    }
+  },
+  {
+    "tokenId": 4,
+    "time": {
+      "sign": 206.553542,
+      "verify": 211.436833,
+      "ownerCall": 202.330583
+    }
+  },
+  {
+    "tokenId": 5,
+    "time": {
+      "sign": 212.032792,
+      "verify": 202.835875,
+      "ownerCall": 286.684959
+    }
+  },
+  {
+    "tokenId": 6,
+    "time": {
+      "sign": 206.640667,
+      "verify": 207.180583,
+      "ownerCall": 202.921083
+    }
+  },
+  {
+    "tokenId": 7,
+    "time": {
+      "sign": 210.374083,
+      "verify": 204.145458,
+      "ownerCall": 208.7105
+    }
+  },
+  {
+    "tokenId": 8,
+    "time": {
+      "sign": 206.287708,
+      "verify": 209.351084,
+      "ownerCall": 204.156166
+    }
+  },
+  {
+    "tokenId": 9,
+    "time": {
+      "sign": 212.681417,
+      "verify": 202.154375,
+      "ownerCall": 206.791167
+    }
+  },
+  {
+    "tokenId": 10,
+    "time": {
+      "sign": 204.434,
+      "verify": 209.94,
+      "ownerCall": 202.267209
+    }
+  },
+  {
+    "tokenId": 11,
+    "time": {
+      "sign": 210.322292,
+      "verify": 204.287,
+      "ownerCall": 215.98475
+    }
+  },
+  {
+    "tokenId": 12,
+    "time": {
+      "sign": 205.396875,
+      "verify": 209.336958,
+      "ownerCall": 202.81275
+    }
+  },
+  {
+    "tokenId": 13,
+    "time": {
+      "sign": 210.029459,
+      "verify": 204.3465,
+      "ownerCall": 209.051833
+    }
+  },
+  {
+    "tokenId": 14,
+    "time": {
+      "sign": 206.213542,
+      "verify": 210.48825,
+      "ownerCall": 203.132833
+    }
+  },
+  {
+    "tokenId": 15,
+    "time": {
+      "sign": 211.035125,
+      "verify": 204.045833,
+      "ownerCall": 208.107583
+    }
+  },
+  {
+    "tokenId": 16,
+    "time": {
+      "sign": 204.105791,
+      "verify": 209.25475,
+      "ownerCall": 202.64975
+    }
+  },
+  {
+    "tokenId": 17,
+    "time": {
+      "sign": 210.001084,
+      "verify": 209.166208,
+      "ownerCall": 207.519792
+    }
+  },
+  {
+    "tokenId": 18,
+    "time": {
+      "sign": 205.112375,
+      "verify": 213.735125,
+      "ownerCall": 204.431375
+    }
+  },
+  {
+    "tokenId": 19,
+    "time": {
+      "sign": 273.119541,
+      "verify": 206.867667,
+      "ownerCall": 260.190125
+    }
+  },
+  {
+    "tokenId": 20,
+    "time": {
+      "sign": 206.193042,
+      "verify": 208.9085,
+      "ownerCall": 201.871334
+    }
+  },
+  {
+    "tokenId": 21,
+    "time": {
+      "sign": 212.908875,
+      "verify": 203.5685,
+      "ownerCall": 218.074292
+    }
+  },
+  {
+    "tokenId": 22,
+    "time": {
+      "sign": 207.627458,
+      "verify": 209.228041,
+      "ownerCall": 204.204417
+    }
+  },
+  {
+    "tokenId": 23,
+    "time": {
+      "sign": 208.129167,
+      "verify": 204.103666,
+      "ownerCall": 206.87275
+    }
+  },
+  {
+    "tokenId": 24,
+    "time": {
+      "sign": 205.093,
+      "verify": 207.971625,
+      "ownerCall": 204.282
+    }
+  },
+  {
+    "tokenId": 25,
+    "time": {
+      "sign": 210.952917,
+      "verify": 201.865083,
+      "ownerCall": 208.114292
+    }
+  },
+  {
+    "tokenId": 26,
+    "time": {
+      "sign": 203.827167,
+      "verify": 207.298334,
+      "ownerCall": 204.258833
+    }
+  },
+  {
+    "tokenId": 27,
+    "time": {
+      "sign": 211.622625,
+      "verify": 202.923083,
+      "ownerCall": 208.931375
+    }
+  },
+  {
+    "tokenId": 28,
+    "time": {
+      "sign": 205.614292,
+      "verify": 208.804917,
+      "ownerCall": 202.889958
+    }
+  },
+  {
+    "tokenId": 29,
+    "time": {
+      "sign": 208.368084,
+      "verify": 203.026041,
+      "ownerCall": 208.253958
+    }
+  },
+  {
+    "tokenId": 30,
+    "time": {
+      "sign": 203.727417,
+      "verify": 207.818208,
+      "ownerCall": 202.176334
+    }
+  },
+  {
+    "tokenId": 31,
+    "time": {
+      "sign": 209.793834,
+      "verify": 202.48775,
+      "ownerCall": 209.0275
+    }
+  },
+  {
+    "tokenId": 32,
+    "time": {
+      "sign": 206.43,
+      "verify": 209.127666,
+      "ownerCall": 202.7965
+    }
+  },
+  {
+    "tokenId": 33,
+    "time": {
+      "sign": 212.247625,
+      "verify": 204.487084,
+      "ownerCall": 208.897125
+    }
+  },
+  {
+    "tokenId": 34,
+    "time": {
+      "sign": 205.345792,
+      "verify": 211.382833,
+      "ownerCall": 202.661583
+    }
+  },
+  {
+    "tokenId": 35,
+    "time": {
+      "sign": 208.832041,
+      "verify": 200.780667,
+      "ownerCall": 208.654875
+    }
+  },
+  {
+    "tokenId": 36,
+    "time": {
+      "sign": 204.436084,
+      "verify": 210.151709,
+      "ownerCall": 205.919875
+    }
+  },
+  {
+    "tokenId": 37,
+    "time": {
+      "sign": 210.836583,
+      "verify": 202.572667,
+      "ownerCall": 206.861541
+    }
+  },
+  {
+    "tokenId": 38,
+    "time": {
+      "sign": 203.179625,
+      "verify": 214.736625,
+      "ownerCall": 206.181875
+    }
+  },
+  {
+    "tokenId": 39,
+    "time": {
+      "sign": 211.330083,
+      "verify": 204.106333,
+      "ownerCall": 209.982
+    }
+  },
+  {
+    "tokenId": 40,
+    "time": {
+      "sign": 204.34425,
+      "verify": 210.810667,
+      "ownerCall": 204.54125
+    }
+  },
+  {
+    "tokenId": 41,
+    "time": {
+      "sign": 211.805667,
+      "verify": 203.0075,
+      "ownerCall": 296.512209
+    }
+  },
+  {
+    "tokenId": 42,
+    "time": {
+      "sign": 205.145708,
+      "verify": 208.098,
+      "ownerCall": 202.7665
+    }
+  },
+  {
+    "tokenId": 43,
+    "time": {
+      "sign": 211.998625,
+      "verify": 207.784417,
+      "ownerCall": 274.827375
+    }
+  },
+  {
+    "tokenId": 44,
+    "time": {
+      "sign": 207.356583,
+      "verify": 208.985334,
+      "ownerCall": 202.62625
+    }
+  },
+  {
+    "tokenId": 45,
+    "time": {
+      "sign": 210.851666,
+      "verify": 201.224917,
+      "ownerCall": 208.606042
+    }
+  },
+  {
+    "tokenId": 46,
+    "time": {
+      "sign": 206.134916,
+      "verify": 209.50875,
+      "ownerCall": 201.137708
+    }
+  },
+  {
+    "tokenId": 47,
+    "time": {
+      "sign": 208.014166,
+      "verify": 203.881625,
+      "ownerCall": 208.838125
+    }
+  },
+  {
+    "tokenId": 48,
+    "time": {
+      "sign": 203.418125,
+      "verify": 208.297791,
+      "ownerCall": 201.421792
+    }
+  },
+  {
+    "tokenId": 49,
+    "time": {
+      "sign": 209.103042,
+      "verify": 210.331917,
+      "ownerCall": 208.290042
+    }
+  },
+  {
+    "tokenId": 50,
+    "time": {
+      "sign": 204.751667,
+      "verify": 209.007084,
+      "ownerCall": 202.24475
+    }
+  },
+  {
+    "tokenId": 51,
+    "time": {
+      "sign": 211.513708,
+      "verify": 202.97925,
+      "ownerCall": 208.567375
+    }
+  },
+  {
+    "tokenId": 52,
+    "time": {
+      "sign": 204.601584,
+      "verify": 212.238166,
+      "ownerCall": 204.063167
+    }
+  },
+  {
+    "tokenId": 53,
+    "time": {
+      "sign": 262.714792,
+      "verify": 204.944667,
+      "ownerCall": 236.662833
+    }
+  },
+  {
+    "tokenId": 54,
+    "time": {
+      "sign": 205.627208,
+      "verify": 209.55625,
+      "ownerCall": 203.213167
+    }
+  },
+  {
+    "tokenId": 55,
+    "time": {
+      "sign": 212.341458,
+      "verify": 202.343208,
+      "ownerCall": 242.797833
+    }
+  },
+  {
+    "tokenId": 56,
+    "time": {
+      "sign": 205.203958,
+      "verify": 208.190417,
+      "ownerCall": 202.711166
+    }
+  },
+  {
+    "tokenId": 57,
+    "time": {
+      "sign": 210.33725,
+      "verify": 204.440792,
+      "ownerCall": 281.824833
+    }
+  },
+  {
+    "tokenId": 58,
+    "time": {
+      "sign": 204.991875,
+      "verify": 208.349292,
+      "ownerCall": 202.703833
+    }
+  },
+  {
+    "tokenId": 59,
+    "time": {
+      "sign": 210.110875,
+      "verify": 203.862916,
+      "ownerCall": 277.3605
+    }
+  },
+  {
+    "tokenId": 60,
+    "time": {
+      "sign": 207.544292,
+      "verify": 210.636875,
+      "ownerCall": 204.508375
+    }
+  },
+  {
+    "tokenId": 61,
+    "time": {
+      "sign": 210.046708,
+      "verify": 204.09425,
+      "ownerCall": 270.091458
+    }
+  },
+  {
+    "tokenId": 62,
+    "time": {
+      "sign": 209.013916,
+      "verify": 210.808083,
+      "ownerCall": 203.877292
+    }
+  },
+  {
+    "tokenId": 63,
+    "time": {
+      "sign": 210.940708,
+      "verify": 204.315,
+      "ownerCall": 209.490583
+    }
+  },
+  {
+    "tokenId": 64,
+    "time": {
+      "sign": 204.70625,
+      "verify": 211.440084,
+      "ownerCall": 204.619834
+    }
+  },
+  {
+    "tokenId": 65,
+    "time": {
+      "sign": 210.554875,
+      "verify": 203.505291,
+      "ownerCall": 232.269292
+    }
+  },
+  {
+    "tokenId": 66,
+    "time": {
+      "sign": 205.53675,
+      "verify": 209.434291,
+      "ownerCall": 203.602041
+    }
+  },
+  {
+    "tokenId": 67,
+    "time": {
+      "sign": 283.333,
+      "verify": 305.456458,
+      "ownerCall": 307.168125
+    }
+  },
+  {
+    "tokenId": 68,
+    "time": {
+      "sign": 203.842791,
+      "verify": 210.456166,
+      "ownerCall": 205.865667
+    }
+  },
+  {
+    "tokenId": 69,
+    "time": {
+      "sign": 211.152875,
+      "verify": 202.815167,
+      "ownerCall": 210.27825
+    }
+  },
+  {
+    "tokenId": 70,
+    "time": {
+      "sign": 205.960667,
+      "verify": 208.992375,
+      "ownerCall": 202.560792
+    }
+  },
+  {
+    "tokenId": 71,
+    "time": {
+      "sign": 209.69725,
+      "verify": 203.407958,
+      "ownerCall": 243.890584
+    }
+  },
+  {
+    "tokenId": 72,
+    "time": {
+      "sign": 205.15175,
+      "verify": 208.671375,
+      "ownerCall": 203.684875
+    }
+  },
+  {
+    "tokenId": 73,
+    "time": {
+      "sign": 210.940708,
+      "verify": 203.012125,
+      "ownerCall": 265.216917
+    }
+  },
+  {
+    "tokenId": 74,
+    "time": {
+      "sign": 204.128334,
+      "verify": 409.370666,
+      "ownerCall": 203.879375
+    }
+  },
+  {
+    "tokenId": 75,
+    "time": {
+      "sign": 213.88525,
+      "verify": 201.826708,
+      "ownerCall": 206.719
+    }
+  },
+  {
+    "tokenId": 76,
+    "time": {
+      "sign": 204.603833,
+      "verify": 209.661,
+      "ownerCall": 202.025416
+    }
+  },
+  {
+    "tokenId": 77,
+    "time": {
+      "sign": 210.403833,
+      "verify": 204.641041,
+      "ownerCall": 207.102458
+    }
+  },
+  {
+    "tokenId": 78,
+    "time": {
+      "sign": 204.574375,
+      "verify": 208.150583,
+      "ownerCall": 203.367584
+    }
+  },
+  {
+    "tokenId": 79,
+    "time": {
+      "sign": 212.125041,
+      "verify": 204.299209,
+      "ownerCall": 210.258708
+    }
+  },
+  {
+    "tokenId": 80,
+    "time": {
+      "sign": 205.481708,
+      "verify": 211.194167,
+      "ownerCall": 206.496333
+    }
+  },
+  {
+    "tokenId": 81,
+    "time": {
+      "sign": 209.934625,
+      "verify": 204.090666,
+      "ownerCall": 208.646208
+    }
+  },
+  {
+    "tokenId": 82,
+    "time": {
+      "sign": 202.283792,
+      "verify": 209.063292,
+      "ownerCall": 202.0265
+    }
+  },
+  {
+    "tokenId": 83,
+    "time": {
+      "sign": 213.881875,
+      "verify": 203.034208,
+      "ownerCall": 206.719542
+    }
+  },
+  {
+    "tokenId": 84,
+    "time": {
+      "sign": 205.805917,
+      "verify": 208.7525,
+      "ownerCall": 206.540084
+    }
+  },
+  {
+    "tokenId": 85,
+    "time": {
+      "sign": 209.895334,
+      "verify": 202.649,
+      "ownerCall": 208.07675
+    }
+  },
+  {
+    "tokenId": 86,
+    "time": {
+      "sign": 218.250875,
+      "verify": 208.691666,
+      "ownerCall": 213.425792
+    }
+  },
+  {
+    "tokenId": 87,
+    "time": {
+      "sign": 211.284833,
+      "verify": 202.751458,
+      "ownerCall": 209.252084
+    }
+  },
+  {
+    "tokenId": 88,
+    "time": {
+      "sign": 205.006458,
+      "verify": 211.057959,
+      "ownerCall": 202.577125
+    }
+  },
+  {
+    "tokenId": 89,
+    "time": {
+      "sign": 209.779958,
+      "verify": 204.355583,
+      "ownerCall": 219.029583
+    }
+  },
+  {
+    "tokenId": 90,
+    "time": {
+      "sign": 203.582333,
+      "verify": 209.343458,
+      "ownerCall": 203.748541
+    }
+  },
+  {
+    "tokenId": 91,
+    "time": {
+      "sign": 210.541167,
+      "verify": 203.431042,
+      "ownerCall": 207.4705
+    }
+  },
+  {
+    "tokenId": 92,
+    "time": {
+      "sign": 204.369709,
+      "verify": 210.973208,
+      "ownerCall": 206.128583
+    }
+  },
+  {
+    "tokenId": 93,
+    "time": {
+      "sign": 208.435125,
+      "verify": 202.055208,
+      "ownerCall": 208.335833
+    }
+  },
+  {
+    "tokenId": 94,
+    "time": {
+      "sign": 203.55525,
+      "verify": 209.372208,
+      "ownerCall": 202.006166
+    }
+  },
+  {
+    "tokenId": 95,
+    "time": {
+      "sign": 209.29975,
+      "verify": 203.372334,
+      "ownerCall": 207.961667
+    }
+  },
+  {
+    "tokenId": 96,
+    "time": {
+      "sign": 203.183542,
+      "verify": 210.341875,
+      "ownerCall": 200.174042
+    }
+  },
+  {
+    "tokenId": 97,
+    "time": {
+      "sign": 211.410417,
+      "verify": 204.743583,
+      "ownerCall": 207.674834
+    }
+  },
+  {
+    "tokenId": 98,
+    "time": {
+      "sign": 203.441541,
+      "verify": 209.55825,
+      "ownerCall": 202.9825
+    }
+  },
+  {
+    "tokenId": 99,
+    "time": {
+      "sign": 211.658084,
+      "verify": 204.456375,
+      "ownerCall": 209.309708
+    }
+  }
+]

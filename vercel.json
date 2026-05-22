@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "npm install --prefix front-end/passkey-minter",
+  "buildCommand": "npm run build --prefix front-end/passkey-minter",
+  "outputDirectory": "front-end/passkey-minter/build",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
